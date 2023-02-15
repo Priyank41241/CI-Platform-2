@@ -1,0 +1,133 @@
+﻿
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.row {
+    width: inherit;
+    height: inherit;
+}
+
+.carousalImg {
+    object-fit: cover !important;
+    height: 100vh !important;
+}
+
+.carousel-caption {
+    text-align: start !important;
+}
+
+.contenttxt {
+    font-size: 1vw;
+}
+
+.loginForm {
+    flex-direction: column !important;
+    justify-content: space-around !important;
+}
+
+.mainForm {
+    padding: 1em;
+    margin: 1em;
+    flex-direction: column;
+}
+
+#forgettxt {
+    color: #414141;
+    text-align: center;
+    font-size: 1.6em;
+}
+
+
+#instructiontxt {
+    color: #414141;
+    text-align: center;
+    font-size: 1em !important;
+}
+
+.form-control {
+    height: 2.5em;
+    margin-top: 0.3em;
+    text-indent: 0.7em;
+    width: 25vw !important;
+}
+
+label {
+    font-size: 1em;
+}
+
+.emailInput {
+    align-self: center;
+}
+
+.loginlabel {
+    margin-top: 1em;
+}
+
+.loginbtn {
+    margin-top: 4.5vh !important;
+    width: 25vw !important;
+    text-align: center !important;
+    height: 2.2em !important;
+    border-radius: 18px !important;
+    color: #F88634 !important;
+    border: 2px solid #F88634 !important;
+}
+
+.loginpage {
+    margin-top: 3vh !important;
+    text-align: center !important;
+    font-size: 1em;
+}
+
+.loginlink {
+    color: #414141 !important;
+    text-decoration: none;
+}
+
+.loginForm .text-center {
+    padding-bottom: 5%;
+}
+
+#privacytxt {
+    color: #414141 !important;
+    text-decoration: none;
+}
+
+
+
+@media (max-width : 991px) {
+    .loginForm {
+        margin-top: 10vh !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+
+    .loginForm .text-center {
+        padding-top: 5vh;
+    }
+
+    .carousalImg {
+        object-fit: inherit !important;
+        height: auto !important;
+    }
+
+    .emailInput {
+        width: 80% !important;
+    }
+
+
+    .contenttxt {
+        display: none;
+    }
+}
+
+@media (max-width : 768px) {
+
+    .carousel-caption p {
+        display: none;
+    }
+} 

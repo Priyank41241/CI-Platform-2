@@ -1,0 +1,111 @@
+﻿
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+.row {
+    width: inherit;
+    height: inherit;
+    --bs-gutter-x: 0 !important;
+}
+
+.carousalImg {
+    object-fit: cover;
+    height: 100vh;
+}
+
+.carousel-caption {
+    position: absolute;
+    text-align: start !important;
+}
+
+
+.registerform {
+    height: inherit;
+    margin: auto;
+}
+
+
+.reglabel {
+    margin-top: 1em;
+}
+
+.registrationForm {
+    justify-content: space-around;
+    flex-direction: column;
+    ---bs-gutter-x:0 !important;
+}
+
+.form-control {
+    height: 2.5em;
+    margin-top: 0.3em;
+    text-indent: 0.7em;
+    width: 25vw !important;
+    padding: 0 !important;
+}
+
+label {
+    font-size: 1em;
+}
+
+.regbtn {
+    margin-top: 4.5vh !important;
+    width: 25vw !important;
+    text-align: center !important;
+    height: 2.2em !important;
+    border-radius: 18px !important;
+    color: #F88634 !important;
+    border: 2px solid #F88634 !important;
+}
+
+
+
+.register {
+    margin-top: 1.5vh !important;
+    text-align: center !important;
+    color: #414141;
+    font-size: 1em;
+    border: none !important;
+}
+
+#loginlink {
+    text-decoration: none;
+}
+
+.registrationForm .text-center {
+    padding-bottom: 5% !important;
+}
+
+#privacytxt {
+    color: #414141 !important;
+    text-decoration: none;
+}
+
+@media (max-width : 991px) {
+
+
+    .registerform {
+        margin: 10%;
+    }
+
+    .registrationForm .text-center {
+        padding-top: 5vh;
+    }
+
+    .carousalImg {
+        object-fit: fill !important;
+        height: auto !important;
+    }
+
+    .form-control {
+        width: 100% !important;
+    }
+}
+
+@media (max-width : 768px) {
+
+    .carousel-caption p {
+        display: none;
+    }
+}
