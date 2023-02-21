@@ -1,0 +1,161 @@
+﻿
+.navbar {
+    padding-left: 6vw;
+    padding-right: 6vw;
+}
+
+.navigationBar {
+    justify-content: space-between;
+}
+
+.userProfile {
+    position: relative;
+    width: 2.5em;
+    height: 2.5em;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+
+    .userProfile img {
+        width: 100%;
+        height: auto;
+    }
+
+.mainRow {
+    height: 4em;
+    padding-left: 10vw;
+}
+
+.searchBar {
+    border: none;
+}
+
+.dropDowns {
+    width: 25%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+    .dropDowns div {
+        width: 100%;
+    }
+
+.dropdown-toggle i {
+    width: auto !important;
+    /* margin-left: 20%; */
+}
+
+
+.nav-link {
+    border: none;
+    background: none;
+    color: black;
+    text-align: center;
+}
+
+    .nav-link i {
+        margin-left: 10%;
+    }
+
+.dropdown-toggle::after {
+    display: none !important;
+}
+
+footer {
+    position: realtive;
+    bottom: 0;
+    height: 10vh;
+}
+
+.privacylink {
+    position: absolute;
+    margin-top: 1vh;
+    margin-left: 8vw;
+}
+
+@media (max-width: 768px) {
+
+    .navbar {
+        padding-top: auto;
+    }
+
+    .mainRow {
+        padding: auto;
+    }
+
+    .dropDowns {
+        padding-top: 3%;
+    }
+
+    .searchBar {
+        padding-top: auto !important;
+    }
+
+    .mainRow .col-md-1 {
+        display: none;
+    }
+
+    .nav-link i {
+        margin: 2%;
+    }
+
+    .mainRow {
+        height: auto;
+    }
+
+    footer {
+        text-align: center !important;
+        padding: 0 !important;
+    }
+
+    .privacylink {
+        position: unset;
+        margin-top: 40vh !important;
+        padding: 0;
+    }
+}
+
+@media (max-width:576px) {
+
+    .searchBar {
+        width: auto !important;
+        padding: auto;
+    }
+}
+
+@media (max-width:767px) {
+
+    .backdropdown {
+        order: 1 !important;
+    }
+
+    .navbar-collapse {
+        order: 2 !important;
+    }
+
+    #filters {
+        display: none !important;
+    }
+}
+
+@media (min-width:768px) {
+    .filter-toggle {
+        display: none;
+    }
+}
+
+.offcanvas {
+    width: 40vw;
+}
+
+.abcd .dropdown-item {
+    max-width: fit-content;
+}
+
+.offCanvas {
+    list-style-type: none;
+    padding: 0;
+    text-align: start;
+}
