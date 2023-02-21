@@ -14,15 +14,16 @@
     font-size: 1em;
 }
 
-.gridctnr {
+/*.gridctnr {
     grid-template-columns: auto auto;
 }
 
     .gridctnr img {
         grid-row: 1 / 3 !important;
-    }
+    }*/
 
-.timeline {
+
+.goalORtime {
     width: max-content !important;
     border: 1px solid gray;
     border-radius: 20px;
@@ -31,7 +32,7 @@
     z-index: 2;
 }
 
-    .timeline div {
+    .goalORtime div {
         height: 2.5em !important;
         display: flex;
         align-items: center;
@@ -42,14 +43,14 @@
     justify-content: space-evenly;
 }*/
 
-.favorite .btn{
-    /*display: flex;
-    justify-content: space-evenly;*/
+.favorite .btn {
     border: 2px solid grey;
     border-radius: 20px;
-   /* width: 45%;*/
     font-size: 1em;
+    --bs-btn-hover-border-color: none;
+    --bs-btn-focus-box-shadow: transparent;
 }
+
 
 .rating-stars {
     width: max-content !important;
@@ -64,6 +65,8 @@
         display: flex;
         align-items: center;
     }
+
+
 
 .mission-info{
     border: 1px solid grey;
@@ -91,4 +94,66 @@
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 2em;
+}
+
+/*---------------------------- Related mission -----------------------------------------------*/
+
+
+.mission {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 0 4px 0 rgba(15, 4, 4, 0.05);
+    transition: all 0.2s ease-out;
+}
+
+.apply {
+    display: flex;
+    justify-content: center;
+}
+
+.apply-btn {
+    border-radius: 20px;
+    width: 10em;
+}
+
+.gridctnr {
+    grid-template-columns: auto auto;
+}
+
+    .gridctnr img {
+        grid-row: 1 / 3 !important;
+    }
+
+.timeline {
+    font-size: 0.8em;
+    width: fit-content !important;
+    border: 1px solid gray;
+    border-radius: 20px;
+    translate: 0 50%;
+    background-color: white;
+}
+
+.ratingclass {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*---------------------------- Related mission -----------------------------------------------*/
+
+
+
+@media (max-width: 768px)
+{
+    .relatedMissions{
+        grid-template-columns: repeat(2,1fr)
+    }
+}
+
+@media (max-width: 576px) {
+    .relatedMissions {
+        grid-template-columns: repeat(1,1fr)
+    }
 }
