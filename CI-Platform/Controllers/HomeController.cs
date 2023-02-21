@@ -23,6 +23,9 @@ namespace CI_Platform.Controllers
             return View();
         }
 
+        public IActionResult MissionDetail() 
+        { return View(); }
+
         public IActionResult Privacy()
         {
             return View();

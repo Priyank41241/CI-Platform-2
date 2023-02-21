@@ -1,6 +1,5 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    Layout = null;
 }
 
 
@@ -13,259 +12,10 @@
     @*<link rel="stylesheet" href="~/css/bootstrap.min.css" />*@
     <link rel="stylesheet"
           href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="~/css/HomePage.css" />
+    @*<link rel="stylesheet" href="~/css/HomePage.css" />*@
     <link rel="stylesheet" href="~/css/ListGridToggle.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar border-bottom border-2 navbar-expand-md
-                navbar-light
-                bg-light">
-            <div class="container-fluid d-flex navigationBar">
-                <button class="navbar-toggler order-0" type="button"
-                        data-bs-toggle="offcanvas"
-                        data-bs-target="#offcanvasExample"
-                        aria-controls="offcanvasExample">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse order-1"
-                     id="navbarColor03">
-                    <ul class="navbar-nav me-auto ">
-                        <li class="nav-item ps-5">
-                            <a class="nav-link" href="#">Stories</a>
-                        </li>
-                        <li class="nav-item ps-5 dropdown">
-                            <a class="nav-link dropdown-toggle"
-                               data-bs-toggle="dropdown" href="#"
-                               role="button" aria-haspopup="true"
-                               aria-expanded="false">
-                                Policy<i class="bi
-                                        bi-chevron-down"></i>
-                            </a>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">Policy 1</a>
-                                <a class="dropdown-item" href="#">Policy 2</a>
-                                <a class="dropdown-item" href="#">Policy 3</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-                <div class="offcanvas offcanvas-start" tabindex="-1"
-                     id="offcanvasExample"
-                     aria-labelledby="offcanvasExampleLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title"
-                            id="offcanvasExampleLabel">
-                            Menubar
-                        </h5>
-                        <button type="button" class="btn-close"
-                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        <ul class="offCanvas">
-                            <li class="">
-                                <a class="nav-link" href="#">Stories</a>
-                            </li>
-                            <li class="dropdown">
-                                <a class="nav-link dropdown-toggle"
-                                   data-bs-toggle="dropdown" href="#"
-                                   role="button" aria-haspopup="true"
-                                   aria-expanded="false">
-                                    Policy<i class="bi
-                                            bi-chevron-down"></i>
-                                </a>
-                                <div class="dropdown-menu abcd">
-                                    <a class="dropdown-item" href="#">
-                                        Policy
-                                        1
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Policy
-                                        2
-                                    </a>
-                                    <a class="dropdown-item" href="#">
-                                        Policy
-                                        3
-                                    </a>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="d-flex backdropdown order-2">
-                    <div class="userProfile">
-                        <img src="~/images/user-img.png"
-                             alt="">
-                    </div>
-                    <div class="dropdown ">
-                        <a class="nav-link dropdown-toggle "
-                           data-bs-toggle="dropdown" href="#"
-                           role="button" aria-haspopup="true"
-                           aria-expanded="false">
-                            Evan Donohue <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#">Option 1</a>
-                            <a class="dropdown-item" href="#">Option 2</a>
-                            <a class="dropdown-item" href="#">Option 3</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-        <nav class="border-bottom border-5">
-            <div class="row mainRow">
-                <div class="col-6 pt-3 border-end border-1 text-center">
-                    <form class="d-flex" role="search">
-                        <button class="btn"
-                                type="submit">
-                            <strong><i class="bi bi-search"></i></strong>
-                        </button>
-                        <input class="form-control searchBar me-2"
-                               type="search"
-                               placeholder="Search mission..."
-                               aria-label="Search">
-                    </form>
-                </div>
-                <button type="button"
-                        data-toggle="collapse"
-                        data-target="#filters"
-                        class="filter-toggle col-6">
-                    <i class="bi bi-sliders
-                            fs-3"></i>
-                </button>
-                <div class="col-5 collapse d-flex container p-0"
-                     id="filters">
-                    <div class="dropdown border-end border-1 dropDowns">
-                        <div class="dropdown-toggle"
-                             data-bs-toggle="dropdown">
-                            <div class="d-flex justify-content-around">
-                                Country <i class="bi
-                                        bi-chevron-down"></i>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Another
-                                    action
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Something
-                                    else here
-                                </a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Separated
-                                    link
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="dropdown border-end border-1 dropDowns">
-                        <div class="dropdown-toggle"
-                             data-bs-toggle="dropdown">
-                            <div class="d-flex justify-content-around">
-                                City <i class="bi
-                                        bi-chevron-down"></i>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Another
-                                    action
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Something
-                                    else here
-                                </a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Separated
-                                    link
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="dropdown border-end border-1 dropDowns">
-                        <div class="dropdown-toggle"
-                             data-bs-toggle="dropdown">
-                            <div class="d-flex justify-content-around">
-                                Theme
-                                <i class="bi
-                                        bi-chevron-down"></i>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Another
-                                    action
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Something
-                                    else here
-                                </a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Separated
-                                    link
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="dropdown border-end border-1 dropDowns">
-                        <div class="dropdown-toggle"
-                             data-bs-toggle="dropdown">
-                            <div class="d-flex justify-content-around">
-                                Skills <i class="bi
-                                        bi-chevron-down"></i>
-                            </div>
-                        </div>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Another
-                                    action
-                                </a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Something
-                                    else here
-                                </a>
-                            </li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li>
-                                <a class="dropdown-item" href="#">
-                                    Separated
-                                    link
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-1"></div>
-            </div>
-        </nav>
-    </header>
     <main class="d-flex flex-column">
         <div></div>
         <div class="container my-3 d-flex flex-column">
@@ -790,11 +540,6 @@
         </div>
         <div></div>
     </main>
-    <footer class=" container-fluid border-2 border-top">
-
-        <a class="privacylink" href="#">Privacy Policy</a>
-
-    </footer>
 </body>
 </html>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
@@ -818,3 +563,257 @@
     });
 
 </script>
+
+
+
+
+
+@*<header class="container-fluid">
+        <nav class="navbar border-bottom border-2 navbar-expand-md
+                navbar-light
+                bg-light">
+            <div class="container-fluid d-flex navigationBar">
+                <button class="navbar-toggler order-0" type="button"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse order-1"
+                     id="navbarColor03">
+                    <ul class="navbar-nav me-auto ">
+                        <li class="nav-item ps-5">
+                            <a class="nav-link" href="#">Stories</a>
+                        </li>
+                        <li class="nav-item ps-5 dropdown">
+                            <a class="nav-link dropdown-toggle"
+                               data-bs-toggle="dropdown" href="#"
+                               role="button" aria-haspopup="true"
+                               aria-expanded="false">
+                                Policy<i class="bi
+                                        bi-chevron-down"></i>
+                            </a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="#">Policy 1</a>
+                                <a class="dropdown-item" href="#">Policy 2</a>
+                                <a class="dropdown-item" href="#">Policy 3</a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="offcanvas offcanvas-start" tabindex="-1"
+                     id="offcanvasExample"
+                     aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title"
+                            id="offcanvasExampleLabel">
+                            Menubar
+                        </h5>
+                        <button type="button" class="btn-close"
+                                data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="offCanvas">
+                            <li class="">
+                                <a class="nav-link" href="#">Stories</a>
+                            </li>
+                            <li class="dropdown">
+                                <a class="nav-link dropdown-toggle"
+                                   data-bs-toggle="dropdown" href="#"
+                                   role="button" aria-haspopup="true"
+                                   aria-expanded="false">
+                                    Policy<i class="bi
+                                            bi-chevron-down"></i>
+                                </a>
+                                <div class="dropdown-menu abcd">
+                                    <a class="dropdown-item" href="#">
+                                        Policy
+                                        1
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Policy
+                                        2
+                                    </a>
+                                    <a class="dropdown-item" href="#">
+                                        Policy
+                                        3
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="d-flex backdropdown order-2">
+                    <div class="userProfile">
+                        <img src="~/images/user-img.png"
+                             alt="">
+                    </div>
+                    <div class="dropdown ">
+                        <a class="nav-link dropdown-toggle "
+                           data-bs-toggle="dropdown" href="#"
+                           role="button" aria-haspopup="true"
+                           aria-expanded="false">
+                            Evan Donohue <i class="bi bi-chevron-down"></i>
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Option 1</a>
+                            <a class="dropdown-item" href="#">Option 2</a>
+                            <a class="dropdown-item" href="#">Option 3</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav class="border-bottom border-5">
+            <div class="row mainRow">
+                <div class="col-6 pt-3 border-end border-1 text-center">
+                    <form class="d-flex" role="search">
+                        <button class="btn"
+                                type="submit">
+                            <strong><i class="bi bi-search"></i></strong>
+                        </button>
+                        <input class="form-control searchBar me-2"
+                               type="search"
+                               placeholder="Search mission..."
+                               aria-label="Search">
+                    </form>
+                </div>
+                <button type="button"
+                        data-toggle="collapse"
+                        data-target="#filters"
+                        class="filter-toggle col-6">
+                    <i class="bi bi-sliders
+                            fs-3"></i>
+                </button>
+                <div class="col-5 collapse d-flex container p-0"
+                     id="filters">
+                    <div class="dropdown border-end border-1 dropDowns">
+                        <div class="dropdown-toggle"
+                             data-bs-toggle="dropdown">
+                            <div class="d-flex justify-content-around">
+                                Country <i class="bi
+                                        bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Another
+                                    action
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Something
+                                    else here
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Separated
+                                    link
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown border-end border-1 dropDowns">
+                        <div class="dropdown-toggle"
+                             data-bs-toggle="dropdown">
+                            <div class="d-flex justify-content-around">
+                                City <i class="bi
+                                        bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Another
+                                    action
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Something
+                                    else here
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Separated
+                                    link
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown border-end border-1 dropDowns">
+                        <div class="dropdown-toggle"
+                             data-bs-toggle="dropdown">
+                            <div class="d-flex justify-content-around">
+                                Theme
+                                <i class="bi
+                                        bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Another
+                                    action
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Something
+                                    else here
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Separated
+                                    link
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="dropdown border-end border-1 dropDowns">
+                        <div class="dropdown-toggle"
+                             data-bs-toggle="dropdown">
+                            <div class="d-flex justify-content-around">
+                                Skills <i class="bi
+                                        bi-chevron-down"></i>
+                            </div>
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Another
+                                    action
+                                </a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Something
+                                    else here
+                                </a>
+                            </li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li>
+                                <a class="dropdown-item" href="#">
+                                    Separated
+                                    link
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+        </nav>
+    </header>*@
