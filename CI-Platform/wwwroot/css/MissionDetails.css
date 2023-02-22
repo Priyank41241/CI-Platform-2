@@ -74,11 +74,18 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    font-size: 15px;
+    max-width: 140px;
 }
 
-.star{
-    margin-right: 0.2em;
-}
+    .mission-info .text-secondary
+    {
+        font-size: 13px;
+    }
+
+    .star {
+        margin-right: 0.2em;
+    }
 
 .apply {
     display: flex;
