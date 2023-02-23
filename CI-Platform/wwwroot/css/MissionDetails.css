@@ -1,6 +1,6 @@
 ﻿.missionIMG {
     object-fit: cover !important;
-    height: 80%;
+    height: 90%;
 }
 
 
@@ -13,14 +13,6 @@
 .shortdetail{
     font-size: 1em;
 }
-
-/*.gridctnr {
-    grid-template-columns: auto auto;
-}
-
-    .gridctnr img {
-        grid-row: 1 / 3 !important;
-    }*/
 
 
 .goalORtime {
@@ -37,11 +29,6 @@
         display: flex;
         align-items: center;
     }
-
-/*.favorite{
-    display: flex;
-    justify-content: space-evenly;
-}*/
 
 .favorite .btn {
     border: 2px solid grey;
@@ -150,6 +137,32 @@
 
 /*---------------------------- Related mission -----------------------------------------------*/
 
+/*----------------------------- NavTabs ---------------------------------*/
+
+#myTab .nav-item {
+    font-size: 15px;
+    font-weight: 600;
+}
+
+#myTab {
+    border-bottom: 1px solid #3E3E3E !important;
+}
+
+    .nav-tabs .nav-link {
+        border-left: none !important;
+        border-right: none !important;
+        border-top: none !important;
+        color: #3E3E3E;
+        text-decoration: none;
+    }
+
+    .nav-tabs .active {
+        border-bottom: 2px solid #414141 !important;
+        color: #414141 !important;
+    }
+
+
+/*------------------------- NavTabs ---------------------------------------------*/
 
 
 @media (max-width: 992px)
