@@ -139,22 +139,24 @@
 
 /*----------------------------- NavTabs ---------------------------------*/
 
+
 #myTab .nav-item {
-    font-size: 15px;
+    font-size:1em;
     font-weight: 600;
 }
 
 #myTab {
-    border-bottom: 1px solid #3E3E3E !important;
+    border-bottom: 1px solid #c6c6c6 !important;
+    --bs-nav-link-hover-color: none;
 }
 
     .nav-tabs .nav-link {
         border-left: none !important;
         border-right: none !important;
         border-top: none !important;
-        color: #3E3E3E;
-        text-decoration: none;
+        color: #676767;
     }
+
 
     .nav-tabs .active {
         border-bottom: 2px solid #414141 !important;
