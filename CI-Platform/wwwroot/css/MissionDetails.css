@@ -167,6 +167,30 @@
 /*------------------------- NavTabs ---------------------------------------------*/
 
 
+
+.doc-btn{
+    display: flex !important;
+    justify-content: space-around;
+    min-width: fit-content !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media (max-width: 992px)
 {
     .relatedMissions{
