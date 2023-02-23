@@ -80,6 +80,8 @@
 }
 
 .apply-btn {
+    border: 1px solid #F88634 !important;
+    color: #F88634 !important;
     border-radius: 20px !important;
     width: 10em;
 }
@@ -101,16 +103,6 @@
     transition: all 0.2s ease-out;
 }
 
-.apply {
-    display: flex;
-    justify-content: center;
-}
-
-.apply-btn {
-    border-radius: 20px;
-    width: 10em;
-}
-
 .gridctnr {
     grid-template-columns: auto auto;
 }
@@ -118,6 +110,15 @@
     .gridctnr img {
         grid-row: 1 / 3 !important;
     }
+
+.timeline {
+    font-size: 0.8em;
+    width: fit-content !important;
+    border: 1px solid gray;
+    border-radius: 20px;
+    translate: 0 50%;
+    background-color: white;
+}
 
 .timeline {
     font-size: 0.8em;
@@ -166,12 +167,123 @@
 
 /*------------------------- NavTabs ---------------------------------------------*/
 
-
+.comment-btn {
+    border: 1px solid #F88634 !important;
+    margin-top: 1em;
+    border-radius: 20px !important;
+    color: #F88634 !important;
+}
 
 .doc-btn{
     display: flex !important;
     justify-content: space-around;
     min-width: fit-content !important;
+    border-radius: 20px !important;
+}
+
+.comment-sec{
+    background-color: #f2e8ac;
+    overflow-y: scroll;
+    height: 400px;
+}
+
+.com-card{
+    margin-top: 1em;
+    display: grid !important;
+    grid-template-columns: 10% 90% !important;
+    grid-template-rows: auto auto;
+    align-content: center;
+}
+
+.com-img {
+    display: flex;
+    align-items: center;
+}
+
+.com-card .card-img-top{
+    padding: 0.5em;
+    border-radius: 50%;
+    grid-row: 1 / span 2;
+    justify-content: center;
+    height: inherit;
+}
+
+.com-txt{
+    display: grid;
+    grid-template-rows: auto auto;
+    row-gap: 0.7em;
+
+}
+
+
+
+.info-div {
+    border: 1px solid #c6c6c6 !important;
+        
+}
+
+.babubhaiya{
+    font-size: 14px;
+}
+
+
+
+
+.recent-vol-div {
+    margin-top: 1.5em;
+    border: 1px solid #c6c6c6 !important;
+}
+
+.volunteer-grid
+{
+    display: grid;
+    grid-template-columns: auto auto auto !important;
+    grid-template-rows: auto auto auto !important;
+    gap: 0.5em !important;
+}
+
+.volunteer
+{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    text-align: center;
+    font-size:13px;
+
+}
+
+.volunteer img{
+    border-radius: 50%;
+    height: 100% !important;
+    width: 100% !important;
+}
+
+.pagination {
+    justify-content: center;
+    margin: 0;
+    border-radius: 0;
+}
+
+.pagination .page-link
+{
+    color: #676767;
+}
+
+.pagination .page-link:hover {
+    color: #676767;
+}
+
+.page-item:first-child .page-link
+{
+    border-radius: 0 !important;
+    border-left: 0;
+    border-bottom: 0;
+}
+
+.page-item:last-child .page-link {
+    border-radius: 0 !important;
+    border-right: 0;
+    border-bottom: 0;
 }
 
 
@@ -181,20 +293,17 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 992px)
-{
+@media (max-width: 992px) {
     .relatedMissions{
         grid-template-columns: repeat(2,1fr)
+    }
+
+    .doc-btn
+    {
+        justify-content: space-evenly
+    }
+    .doc-btn img{
+        justify-self: end;
     }
 }
 
