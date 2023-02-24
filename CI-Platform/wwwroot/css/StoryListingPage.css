@@ -1,0 +1,145 @@
+﻿
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.upper-image {
+    height: 25vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+    .upper-image img {
+        object-fit: cover !important;
+        transform: translate(0, -25%);
+        filter: brightness(30%);
+        
+    }   
+
+.share-story-btn{
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+}
+
+.share-story-btn:hover{
+    border-color: white;
+}
+
+
+.story-list
+{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2em;
+    margin-top: 2em;
+}
+
+
+.theme-tag {
+    display: flex;
+    justify-content: center !important;
+    background-color: white;
+    border-radius: 20px;
+    width: fit-content;
+    transform: translate(0,-50%);
+}
+
+.story-list .card .card-footer{
+    background-color: transparent;
+    border: none;
+}
+
+.story-volunteer{
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    width: 3em;
+}
+
+
+/*-----------------------------  card-hover  ------------------------------------*/
+
+/*.middle {
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.card-image:hover img {
+    opacity: 0.5;
+}
+
+.card-image:hover .middle {
+    opacity: 1;
+}
+
+.text {
+    background-color: #04AA6D;
+    color: white;
+    font-size: 16px;
+    padding: 16px 32px;
+}
+
+*/
+
+.card-image:hover img{
+    background: rgb(0,0,0,0.5);
+}
+
+.card-image:not(:hover) .story-detail-btn
+{
+    display: none;
+}
+
+.view-story-btn {
+    border: 1px solid white;
+    border-radius: 20px;
+    color: white;
+}
+
+/*--------------------------------------  card-hover  -----------------------------*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 992px)
+{
+    .centered, .share-story-btn{
+        font-size: 0.8em;
+    }
+
+    .story-list
+    {
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media (max-width: 576px) {
+    .centered-txt {
+        display: none;
+    }
+
+    .share-story-btn{
+        font-size: 1.2em;
+    }
+}
