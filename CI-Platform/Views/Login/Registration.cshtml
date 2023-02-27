@@ -1,7 +1,7 @@
 ﻿@{
     Layout = null;
 }
-
+@model MainProjectEntity.Models.User;
 <!DOCTYPE html>
 <html>
   <head>
@@ -123,12 +123,12 @@
       </div>
       <div class="registrationForm col-lg-4 d-flex">
         <div></div>
-        <form class="registerform">
+        <form method="post" class="registerform">
           <div>
             <div class="reglabel">
-              <label for="regname">First Name</label>
+              <label asp-for="FirstName">First Name</label>
             </div>
-            <input
+            <input asp-for="FirstName"
               class="form-control"
               id="regename"
               placeholder="First Name"
@@ -137,9 +137,9 @@
           </div>
           <div>
             <div class="reglabel">
-              <label for="reglastname">Last Name</label>
+              <label asp-for="LastName">Last Name</label>
             </div>
-            <input
+            <input asp-for="LastName"
               class="form-control"
               id="reglastname"
               placeholder="Last Name"
@@ -148,9 +148,9 @@
           </div>
           <div>
             <div class="reglabel">
-              <label for="phnumber">Phone Number</label>
+              <label asp-for="PhoneNumber">Phone Number</label>
             </div>
-            <input
+            <input asp-for="PhoneNumber"
               class="form-control"
               id="phnumber"
               placeholder="Phone number"
@@ -159,9 +159,9 @@
           </div>
           <div>
             <div class="reglabel">
-              <label for="regmail">Email Address</label>
+              <label asp-for="Email">Email Address</label>
             </div>
-            <input
+            <input asp-for="Email"
               class="form-control"
               id="regmail"
               placeholder="Email"
@@ -170,9 +170,9 @@
           </div>
           <div>
             <div class="reglabel">
-              <label for="regpass1">Password</label>
+              <label asp-for="Password">Password</label>
             </div>
-            <input
+            <input asp-for="Password"
               class="form-control"
               id="regpass1"
               placeholder="Password"
@@ -205,6 +205,10 @@
   </body>
 </html>
 
+
+@{
+    <partial name="_ValidationScriptsPartial"></partial>
+}
 
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>

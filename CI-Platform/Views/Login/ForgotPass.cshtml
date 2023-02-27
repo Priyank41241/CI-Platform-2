@@ -39,7 +39,7 @@
                             <h1>Sed ut perspiciatis unde omnis iste natus voluptatem.</h1>
                             <p class="pb-5">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                /do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                 irure dolor in reprehenderit in voluptate velit esse cillum
@@ -57,7 +57,7 @@
                             <h1>Sed ut perspiciatis unde omnis iste natus voluptatem.</h1>
                             <p class="pb-5">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                /do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                 irure dolor in reprehenderit in voluptate velit esse cillum
@@ -75,7 +75,7 @@
                             <h1>Sed ut perspiciatis unde omnis iste natus voluptatem.</h1>
                             <p class="pb-5">
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                                do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                /do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco
                                 laboris nisi ut aliquip ex ea commodo consequat. Duis aute
                                 irure dolor in reprehenderit in voluptate velit esse cillum
@@ -104,7 +104,7 @@
         </div>
         <div class="col-lg-4 container loginForm d-flex">
             <div></div>
-            <form class="mainForm d-flex">
+            <form asp-action="ForgotPassPost" method="post" class="mainForm d-flex">
                 <div>
                     <p id="forgettxt">Forgot Password</p>
                 </div>
@@ -114,6 +114,14 @@
                         we will send you a password reset link
                     </p>
                 </div>
+                <div>
+                    <span>
+                        @if (TempData["Exception"] != null)
+                        {
+                            @TempData["Exception"].ToString();
+                        }
+                    </span>
+                </div>
                 <div class="emailInput">
                     <div class="loginlabel">
                         <label for="forgetmail">Email Address</label>
@@ -121,7 +129,7 @@
                     <input class="form-control"
                            id="forgetmail"
                            placeholder="Email"
-                           type="text" />
+                           type="text" name="email_forgot" />
                 </div>
                 <div class="emailInput">
                     <input type="submit"
