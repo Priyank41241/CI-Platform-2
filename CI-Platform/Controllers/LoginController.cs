@@ -1,5 +1,5 @@
-﻿using MainProjectEntity.Data;
-using MainProjectEntity.Models;
+﻿using MainProjectEntity.Models;
+using MainProjectEntity.Data;
 using Microsoft.AspNetCore.Mvc;
 using System.Net.Mail;
 
@@ -28,8 +28,8 @@ namespace CI_Platform.Controllers
         {
             if (ModelState.IsValid)
             {
-
-                var Ucount = _db.Users.Where(x => x.Email == obj.Email && x.Password == obj.Password).ToList().Count();
+                var Ucount = 1;
+                //var Ucount = _db.Users.Where(x => x.Email == obj.Email && x.Password == obj.Password).ToList().Count();
 
                 TempData["NoUser"] = null;
                 TempData["UserError"] = null;
@@ -130,7 +130,7 @@ namespace CI_Platform.Controllers
 
             if (Ucount == 0)
             {
-                _db.Users.Add(obj);
+                //_db.Users.Add(obj);
                 _db.SaveChanges();
                 return RedirectToAction("Index", "Home");
             }
