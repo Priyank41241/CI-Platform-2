@@ -124,6 +124,14 @@
       <div class="registrationForm col-lg-4 d-flex">
         <div></div>
         <form method="post" class="registerform">
+            <div>
+                <span class="text-danger">
+                    @if(TempData["EmailExists"] != null)
+                        {
+                            @TempData["EmailExists"].ToString();
+                        }
+                    </span>
+            </div>
           <div>
             <div class="reglabel">
               <label asp-for="FirstName">First Name</label>

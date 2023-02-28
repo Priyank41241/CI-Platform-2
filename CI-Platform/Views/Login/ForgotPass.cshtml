@@ -115,10 +115,14 @@
                     </p>
                 </div>
                 <div>
-                    <span>
+                    <span class="text-danger">
                         @if (TempData["Exception"] != null)
                         {
                             @TempData["Exception"].ToString();
+                        }
+                         @if (TempData["NoMailFound"] != null)
+                        {
+                            @TempData["NoMailFound"].ToString();
                         }
                     </span>
                 </div>

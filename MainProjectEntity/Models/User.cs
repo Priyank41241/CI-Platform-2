@@ -36,8 +36,8 @@ namespace MainProjectEntity.Models
         public string? WhyIVolunteer { get; set; }
         public string? EmployeeId { get; set; }
         public string? Department { get; set; }
-        public long CityId { get; set; } 
-        public long CountryId { get; set; }
+        public long CityId { get; set; } = 1;
+        public long CountryId { get; set; } = 1;
         public string? ProfileText { get; set; }
         public string? LinkedInUrl { get; set; }
         public string? Title { get; set; }
